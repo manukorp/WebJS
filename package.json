@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/manukorp/WebJS/issues"
   },
-  "homepage": "https://github.com/manukorp/WebJS#readme"
+  "homepage": "https://github.com/manukorp/WebJS#readme",
+  "dependencies": {
+    "st": "^0.5.4"
+  }
 }
