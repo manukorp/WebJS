@@ -1,10 +1,17 @@
 'use strict'
+const http=require("http")
+const port=process.env.PORT || 8080
+const server=http.createServer()
+server.listen(port)
 
-const http=require("http");
+server.on("request",onRequest)
+server.on("listening", onListening)
 
-const port=process.env.PORT || 8080;
+function onRequest(req, res){
+	res.end("Hola Manuko")
+}
 
-const server=http.createServer();
+function onListening(){
+	console.log("Servidor escuchando en : "+port)
+}
 
-
-server.listen(port);
