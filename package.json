@@ -1,0 +1,24 @@
+{
+  "name": "webjs",
+  "version": "1.0.0",
+  "description": "WebApp con iojs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manukorp/WebJS.git"
+  },
+  "keywords": [
+    "iojs",
+    "web",
+    "test"
+  ],
+  "author": "Manuel Moreta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/manukorp/WebJS/issues"
+  },
+  "homepage": "https://github.com/manukorp/WebJS#readme"
+}
