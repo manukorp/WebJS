@@ -15,11 +15,12 @@ function onRequest(req, res){
 	let rs = fs.createReadStream(fileName)
 	rs.pipe(res)
 	rs.on('error',function(error){
+		res.setHeader('Content-Type','text/html')
 		res.end(error.message)
 	})
 }
 
 function onListening(){
-	console.log("Servidor escuchando en : "+port)
+	console.log(`Servidor escuchando en ${port}`)
 }
 
